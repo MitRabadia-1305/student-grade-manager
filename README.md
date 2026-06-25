@@ -16,11 +16,8 @@ A full-stack web app for schools to manage and track student grades.
 
 ## How to Run
 1. Install dependencies:
-
-pip install flask-cors
-2. Run the Flask server:
-
-python project.py
+    pip install flask-cors
+2. Run the Flask server
 3. Open `project.html` with Live Server in VS Code
 
 ## Author
