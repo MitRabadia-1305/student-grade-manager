@@ -1,0 +1,409 @@
+body{
+    background-color: #CBD5E1;
+    overflow-x: hidden  ;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1E3A5F;
+    color: #F6C90E;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+header:hover{
+    box-shadow: 0 8px 24px rgba(246, 201, 14, 0.3);
+    transform: translateY(-2px);
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+header h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+}
+
+section{
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+section h2{
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Montserrat', sans-serif;
+    color: #FADA6A;
+}
+
+section label{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    min-width: 140px;
+}
+
+.upload{
+    background-color: #2C5282;
+    margin-top: 10px;
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.upload:hover{
+    box-shadow: 0 8px 24px rgba(44, 82, 130, 0.5);
+    transform: translateY(-2px);
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 20px;
+}
+
+#form div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#form input{
+    flex: 1;
+    min-width: 0;
+    max-width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #F6C90E;
+    box-sizing: border-box;
+}
+
+#form input:focus{
+    outline: none;
+    border: 2px solid #FADA6A;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    justify-content: center;
+}
+
+#addBtn{
+    background-color: #16A34A;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#addBtn:hover{
+    background-color: #15803D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(22, 163, 74, 0.6);
+}
+
+#addBtn:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+#clearBtn{
+    background-color: #DC2626;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#clearBtn:hover{
+    background-color: #B91C1C;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(220, 38, 38, 0.6);
+}
+
+#clearBtn:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.statistics{
+    margin-top: 10px;
+    background-color: #1B2A4A;
+    border-radius: 20px;
+    padding: 10px;
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.statistics:hover{
+    box-shadow: 0 8px 24px rgba(27, 42, 74, 0.6);
+    transform: translateY(-2px);
+}
+
+.statistics h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #F6C90E;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.statistics div{
+    background-color: #243B6E;
+    border-radius: 12px;
+    border-top: 3px solid #F6C90E;
+    padding: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statistics label{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #FADA6A;
+    display: inline;
+}
+
+.statistics input{
+    display: block;
+    width: 50%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+.statistics input:focus{
+    outline: none;
+}
+
+.search-bar{
+    margin-top: 10px;
+    padding: 12px 18px;
+    border-radius: 25px;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #F6C90E;
+    background-color: #243B6E;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input::placeholder{
+    color: #FADA6A;
+}
+
+.search-bar input:hover{
+    border-color: #FADA6A;
+    box-shadow: 0 4px 14px rgba(246, 201, 14, 0.25);
+}
+
+.search-bar input:focus{
+    border-color: #FADA6A;
+    background-color: #243B6E;
+    box-shadow: 0 4px 14px rgba(246, 201, 14, 0.35);
+}
+
+.table-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #93A8C0;
+}
+
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+thead{
+    background-color: #1E3A5F;
+}
+
+th{
+    padding: 14px 18px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #F6C90E;
+    letter-spacing: 0.5px;
+}
+
+thead tr th:first-child{
+    border-radius: 25px 0 0 0;
+}
+
+thead tr th:last-child{
+    border-radius: 0 25px 0 0;
+}
+
+thead tr{
+    transition: background-color 0.2s ease;
+}
+
+thead tr:hover{
+    background-color: #2C5282;
+}
+
+thead tr th{
+    transition: color 0.2s ease;
+}
+
+thead tr:hover th{
+    color: #FADA6A;
+}
+
+tbody tr{
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+tbody tr:nth-child(even){
+    background-color: #B8C8DC;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #D0DCE8;
+}
+
+tbody tr:hover{
+    background-color: #93A8C0;
+    transform: translateX(4px);
+    cursor: pointer;
+}
+
+tbody td{
+    padding: 12px 18px;
+    font-size: 14px;
+    color: #1E3A5F;
+    font-family: 'Roboto', sans-serif;
+}
+
+#placeholderROW td{
+    text-align: center;
+    color: #6B7E94;
+    font-style: italic;
+    padding: 20px;
+    background-color: #D0DCE8;
+}
+
+.export-container{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.export-btn{
+    width: 100%;
+    padding: 18px;
+    background-color: #1E3A5F;
+    color: #F6C90E;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid #F6C90E;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.export-btn:hover{
+    background-color: #F6C90E;
+    color: #1E3A5F;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(246, 201, 14, 0.4);
+}
+
+.export-btn:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+footer{
+    margin: 10px -10px 0 -10px;
+    padding: 16px;
+    background-color: #1E3A5F;
+    color: #FADA6A;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+footer:hover{
+    box-shadow: 0 8px 24px rgba(246, 201, 14, 0.3);
+    transform: translateY(-2px);
+}
+
+.deleteBtn{
+    background-color: #DC2626;
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.deleteBtn:hover{
+    background-color: #B91C1C;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.6);
+}
+
+.deleteBtn:active{
+    transform: translateY(1px);
+    box-shadow: none;
+}
